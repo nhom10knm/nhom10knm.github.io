@@ -1,346 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhóm 10</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;0,900;1,400&display=swap');
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>KNM_Nhóm 10: Rạp Xiếc Trung Ương</title>
 </head>
+
 <body>
     <div id="container">
-        <div class="page-section" id="homepage">
-            <div class="layer"></div>
-            <div id="home-section">
-                <div id ="home-title-container">
-                    <h1 class="home-title">Rạp xiếc trung ương</h1>
-                </div>
+        <div class="nav">
+            <div class="nav-section width-1140">
+                <a href="#" class="nav-logo">Nhóm 10</a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#" class="nav-item">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">Our Contract</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">Our Video</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div id="students-section" class="page-section">
-            <div id="card-section">
-                <h1 class="card-section-title">Thành viên</h1>
-                <div id="card-container">
-                    <div class="card-frame">
-                        <div class="card" onclick="showMember(0)">
-                            <a href="javascript:void(0)">
-                                <div class="card-image">
-                                    <div class="card-layer"></div>
-                                    <img src="./Pictures/Trọng_Đức.jpg" alt="">
-                                </div>
-                                <div class="card-info">
-                                    <p class="card-name">Trọng Đức</p>
-                                    <p class="card-describe">19120061</p>
-                                </div>
+        <div class="main-section">
+            <div class="section width-1140">
+                <h1 class="team-title">ABOUT US</h1>
+                <p class="team-bio">We are Rạp Xiếc Trung Ương.</p>
+                <div class="team-cards">
+                    <div class="team-item">
+                        <div class="team-card">
+                            <a class="team-card-image" href="./trongduc.html">
+                                <img src="./img/Trọng_Đức.jpg" alt="Avatar">
                             </a>
+                            <div class="team-card-info">
+                                <a class="card-name" href="./trongduc.html">Ngô Trọng Đức</a>
+                                <p class="card-id">19120061</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-frame">
-                        <div class="card" onclick="showMember(1)">
-                            <a href="javascript:void(0)">
-                                <div class="card-image">
-                                    <div class="card-layer"></div>
-                                    <img src="./Pictures/Mạnh_Đức.jpg" alt="">
-                                </div>
-                                <div class="card-info">
-                                    <p class="card-name">Mạnh Đức</p>
-                                    <p class="card-describe">19120062</p>
-                                </div>
+                    <div class="team-item">
+                        <div class="team-card">
+                            <a class="team-card-image" href="./manhduc.html">
+                                <img src="./img/Mạnh_Đức.jpg" alt="Avatar">
+                            </a>mz
+                            <div class="team-card-info">
+                                <a class="card-name" href="./manhduc.html">Trần Mạnh Đức</a>
+                                <p class="card-id">19120062</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-card">
+                            <a class="team-card-image" href="./doanhuy.html">
+                                <img src="./img/Đoàn_Huy.jpg" alt="Avatar">
                             </a>
+                            <div class="team-card-info">
+                                <a class="card-name" href="./doanhuy.html">Đoàn Thế Huy</a>
+                                <p class="card-id">19120079</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-frame">
-                        <div class="card" onclick="showMember(2)">
-                            <a href="javascript:void(0)">
-                                <div class="card-image">
-                                    <div class="card-layer"></div>
-                                    <img src="./Pictures/Đoàn_Huy.jpg" alt="">
-                                </div>
-                                <div class="card-info">
-                                    <p class="card-name">Thế Huy</p>
-                                    <p class="card-describe">19120079</p>
-                                </div>
+                    <div class="team-item">
+                        <div class="team-card">
+                            <a class="team-card-image" href="./giahuy.html">
+                                <img src="./img/Gia_Huy.jpg" alt="Avatar">
                             </a>
+                            <div class="team-card-info">
+                                <a class="card-name" href="./giahuy.html">Nguyễn Gia Huy</a>
+                                <p class="card-id">19120081</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-frame">
-                        <div class="card" onclick="showMember(3)">
-                            <a href="javascript:void(0)">
-                                <div class="card-image">
-                                    <div class="card-layer"></div>
-                                    <img src="./Pictures/Hải_Síl.jpg" alt="">
-                                </div>
-                                <div class="card-info">
-                                    <p class="card-name">Hải Síl</p>
-                                    <p class="card-describe">19120125</p>
-                                </div>
+                    <div class="team-item">
+                        <div class="team-card">
+                            <a class="team-card-image" href="./haisil.html">
+                                <img src="./img/Hải_Síl.jpg" alt="Avatar">
                             </a>
-                        </div>
-                    </div>
-                    <div class="card-frame">
-                        <div class="card" onclick="showMember(4)">
-                            <a href="javascript:void(0)">
-                                <div class="card-image">
-                                    <div class="card-layer"></div>
-                                    <img src="./Pictures/Gia_Huy.jpg" alt="">
-                                </div>
-                                <div class="card-info">
-                                    <p class="card-name">Gia Huy</p>
-                                    <p class="card-describe">19120081</p>
-                                </div>
-                            </a>    
-                        </div>
-                    </div>
-                    <div class="card-frame">
-                        <div class="card" onclick="showMember(5)">
-                            <a href="javascript:void(0)">
-                                <div class="card-image">
-                                    <div class="card-layer"></div>
-                                    <img src="./Pictures/Ngọc_Thắm.jpg" alt="">
-                                </div>
-                                <div class="card-info">
-                                    <p class="card-name">Ngọc Thắm</p>
-                                    <p class="card-describe">1712160</p>
-                                </div>
-                            </a>    
-                        </div>
-                    </div>
-                    <div class="card-frame">
-                        <div class="card" onclick="showMember(6)">
-                            <a href="javascript:void(0)">
-                                <div class="card-image">
-                                    <div class="card-layer"></div>
-                                    <img src="./Pictures/Cát_Tường.jpg" alt="">
-                                </div>
-                                <div class="card-info">
-                                    <p class="card-name">Cát Tường</p>
-                                    <p class="card-describe">18120644</p>
-                                </div>
-                            </a>    
-                        </div>
-                    </div>
-                </div>
-                <div id="member-container">
-                    <div class="member-frame">
-                        <div class="member-card">
-                            <a class="member-cls" href="javascript:void(0)" onclick="hideMember(0)"><i class="fa fa-close"></i></a>
-                            <div class="card-image">
-                                <img src="./Pictures/Trọng_Đức.jpg" alt="">
-                            </div>
-                            <div class="member-profile-frame">
-                                <div class="member-profile">
-                                    <h4 class="member-name">Ngô Trọng Đức</h4>
-                                    <p class="member-info">ID: 19120061</p>
-                                    <p class="member-info">School: HCMUS</p>
-                                    <p class="member-info">Falcuty of: Information Technology</p>
-                                    <p class="member-des">"Legends aren't defined by their successes, they're defined by how they bounce back from their failures."</p>
-                                    <p class="member-info member-contact">Contact:</p>
-                                    <ul class="card-social">
-                                        <li class="card-icon">
-                                            <a href="https://fb.com/trongduc1509" class="icon-item fb-icon" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li class="card-icon">
-                                            <a href="https://www.instagram.com/trong.ducc/" class="icon-item ig-icon" target="_blank">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li class="card-icon">
-                                            <a href="https://www.linkedin.com/in/trongduc1509/" class="icon-item linkedin-icon" target="_blank">
-                                                <i class="fab fa-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="team-card-info">
+                                <a class="card-name" href="./haisil.html">Cao Hải Síl</a>
+                                <p class="card-id">19120125</p>
                             </div>
                         </div>
                     </div>
-                    <div class="member-frame">
-                        <div class="member-card">
-                            <a class="member-cls" href="javascript:void(0)" onclick="hideMember(1)"><i class="fa fa-close"></i></a>
-                            <div class="card-image">
-                                <img src="./Pictures/Mạnh_Đức.jpg" alt="">
-                            </div>
-                            <div class="member-profile-frame">
-                                <div class="member-profile">
-                                    <h4 class="member-name">Trần Mạnh Đức</h4>
-                                    <p class="member-info">ID: 1920062</p>
-                                    <p class="member-info">School: HCMUS</p>
-                                    <p class="member-info">Falcuty of: Information Technology</p>
-                                    <p class="member-des">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
-                                    <p class="member-info member-contact">Contact:</p>
-                                    <ul class="card-social">
-                                        <li class="card-icon">
-                                            <a href="https://fb.com/profile.php?id=100022460080511" class="icon-item fb-icon" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            <li class="card-icon">
-                                                <a href="https://www.instagram.com/tranmanhduc.vn/" class="icon-item ig-icon" target="_blank">
-                                                    <i class="fab fa-instagram"></i>
-                                                </a>
-                                            </li>
-                                        </li>
-                                    </ul>
-                                </div>
+                    <div class="team-item">
+                        <div class="team-card">
+                            <a class="team-card-image" href="./hatham.html">
+                                <img src="./img/Ngọc_Thắm.jpg" alt="Avatar">
+                            </a>
+                            <div class="team-card-info">
+                                <a class="card-name" href="./hatham.html">Hà Thị Ngọc Thắm</a>
+                                <p class="card-id">1712160</p>
                             </div>
                         </div>
                     </div>
-                    <div class="member-frame">
-                        <div class="member-card">
-                            <a class="member-cls" href="javascript:void(0)" onclick="hideMember(2)"><i class="fa fa-close"></i></a>
-                            <div class="card-image">
-                                <img src="./Pictures/Đoàn_Huy.jpg" alt="">
-                            </div>
-                            <div class="member-profile-frame">
-                                <div class="member-profile">
-                                    <h4 class="member-name">Đoàn Thế Huy</h4>
-                                    <p class="member-info">ID: 1920079</p>
-                                    <p class="member-info">School: HCMUS</p>
-                                    <p class="member-info">Falcuty of: Information Technology</p>
-                                    <p class="member-des">"There is a crack in everything. That's how the light gets in."</p>
-                                    <p class="member-info member-contact">Contact:</p>
-                                    <ul class="card-social">
-                                        <li class="card-icon">
-                                            <a href="http://fb.com/profile.php?id=100006353160215" class="icon-item fb-icon" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li class="card-icon">
-                                            <a href="https://instagram.com/huydoan_198" class="icon-item ig-icon" target="_blank">
-                                                <i class="fa fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-frame">
-                        <div class="member-card">
-                            <a class="member-cls" href="javascript:void(0)" onclick="hideMember(3)"><i class="fa fa-close"></i></a>
-                            <div class="card-image">
-                                <img src="./Pictures/Hải_Síl.jpg" alt="">
-                            </div>
-                            <div class="member-profile-frame">
-                                <div class="member-profile">
-                                    <h4 class="member-name">Cao Hải Síl</h4>
-                                    <p class="member-info">ID: 1920062</p>
-                                    <p class="member-info">School: HCMUS</p>
-                                    <p class="member-info">Falcuty of: Information Technology</p>
-                                    <p class="member-des">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
-                                    <p class="member-info member-contact">Contact:</p>
-                                    <ul class="card-social">
-                                        <li class="card-icon">
-                                            <a href="http://fb.com/haiSil837376" class="icon-item fb-icon" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li class="card-icon">
-                                            <a href="https://instagram.com/high.sew" class="icon-item ig-icon" target="_blank">
-                                                <i class="fa fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-frame">
-                        <div class="member-card">
-                            <a class="member-cls" href="javascript:void(0)" onclick="hideMember(4)"><i class="fa fa-close"></i></a>
-                            <div class="card-image">
-                                <img src="./Pictures/Gia_Huy.jpg" alt="">
-                            </div>
-                            <div class="member-profile-frame">
-                                <div class="member-profile">
-                                    <h4 class="member-name">Nguyễn Gia Huy</h4>
-                                    <p class="member-info">ID: 1920081</p>
-                                    <p class="member-info">School: HCMUS</p>
-                                    <p class="member-info">Falcuty of: Information Technology</p>
-                                    <p class="member-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsum id vitae repellat nostrum ab porro, commodi illo, architecto quo laborum quis praesentium excepturi consectetur asperiores dicta nulla, cupiditate harum.</p>
-                                    <p class="member-info member-contact">Contact:</p>
-                                    <ul class="card-social">
-                                        <li class="card-icon">
-                                            <a href="https://fb.com/ghuy000" class="icon-item fb-icon" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li class="card-icon">
-                                            <a href="https://instagram.com/__ghuy__" class="icon-item ig-icon" target="_blank">
-                                                <i class="fa fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-frame">
-                        <div class="member-card">
-                            <a class="member-cls" href="javascript:void(0)" onclick="hideMember(5)"><i class="fa fa-close"></i></a>
-                            <div class="card-image">
-                                <img src="./Pictures/Ngọc_Thắm.jpg" alt="">
-                            </div>
-                            <div class="member-profile-frame">
-                                <div class="member-profile">
-                                    <h4 class="member-name">Hà Thị Ngọc Thắm</h4>
-                                    <p class="member-info">ID: 1712160</p>
-                                    <p class="member-info">School: HCMUS</p>
-                                    <p class="member-info">Falcuty of: Information Technology</p>
-                                    <p class="member-des">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
-                                    <p class="member-info member-contact">Contact:</p>
-                                    <ul class="card-social">
-                                        <li class="card-icon">
-                                            <a href="https://fb.com/profile.php?id=100008147685496" class="icon-item fb-icon" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-frame">
-                        <div class="member-card">
-                            <a class="member-cls" href="javascript:void(0)" onclick="hideMember(6)"><i class="fa fa-close"></i></a>
-                            <div class="card-image">
-                                <img src="./Pictures/Cát_Tường.jpg" alt="">
-                            </div>
-                            <div class="member-profile-frame">
-                                <div class="member-profile">
-                                    <h4 class="member-name">Nguyễn Cát Tường</h4>
-                                    <p class="member-info">ID: 18120644</p>
-                                    <p class="member-info">School: HCMUS</p>
-                                    <p class="member-info">Falcuty of: Information Technology</p>
-                                    <p class="member-des">"Be a good and kind person and don't waste time trying to prove it."</p>
-                                    <p class="member-info member-contact">Contact:</p>
-                                    <ul class="card-social">
-                                        <li class="card-icon">
-                                            <a href="https://fb.com/nguyen.tuong.5667" class="icon-item fb-icon" target="_blank">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                    <div class="team-item">
+                        <div class="team-card">
+                            <a class="team-card-image" href="./cattuong.html">
+                                <img src="./img/Cát_Tường.jpg" alt="Avatar">
+                            </a>
+                            <div class="team-card-info">
+                                <a class="card-name" href="./cattuong.html">Nguyễn Cát Tường</a>
+                                <p class="card-id">18120644</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="page-button-list">
-                    <div class="page-button-container"><a href = "javascript:void(0)" class = "page-button active">1</a></div>
-                    <div class="page-button-container"><a href = "javascript:void(0)" class = "page-button">2</a></div>
-                    <div class="page-button-container"><a href = "javascript:void(0)" class = "page-button">3</a></div>
-                </div>
+                <p class="team-contact">"Being Bigger Than Yourself"</p>
             </div>
         </div>
+
     </div>
-    <script src="https://kit.fontawesome.com/a980ec8fc3.js" crossorigin="anonymous"></script>
-    <script src="function.js"></script>
+
 </body>
+
 </html>

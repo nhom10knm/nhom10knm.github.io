@@ -1,0 +1,222 @@
+#container {
+    position: relative;
+}
+.return-link {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    transition: 0.3s ease;
+    color: #222;
+}
+.return-link::before {
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 10px;
+    height: 2px;
+    background-color: #222;
+    transition: 0.3s ease;
+}
+.return-link:hover {
+    opacity: 0.5;
+}
+.return-link:hover::before {
+    width: 100%;
+}
+.gradient-skew {
+    background-image: linear-gradient(0deg ,#766dff 0%,#88f3ff 100%);
+    position: fixed;
+    z-index: -1;
+    transform: skewX(15deg) translateX(-50%);
+    width: 35%;
+    top: 0;
+    bottom: 0;
+}
+.background-skew-left {
+    left: 0;
+}
+.background-skew-right {
+    left: 100%;
+}
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+}
+.profile-card {
+    display: flex;
+    box-shadow: 0 0 25px rgb(0, 0, 0, 25%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+.flex-item {
+    flex-basis: 50%;
+}
+.profile-img-container {
+    width: 100%;
+    background-color: #fff;
+}
+.profile-img-container img {
+    width: 100%;
+    display: block;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+.profile-title {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #222;
+}
+.profile-subtitle {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #222;
+}
+.profile-bio {
+    margin-bottom: 2.5rem;
+    margin-top: auto;
+    color: #777777;
+    line-height: 1.8;
+}
+.profile-info-list {
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+.profile-info-list li {
+    margin-bottom: 1rem;
+}
+.profile-info i {
+    color:#766dff;
+    min-width: 1rem;
+}
+.profile-info span {
+    padding-left: 1rem; 
+    color: #777777;
+}
+.profile-social-list {
+    display: flex;
+}
+.profile-icon {
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    transition: 0.3s ease;
+}
+.profile-icon:hover {
+    opacity: 0.5;
+}
+.fb-icon {
+    color: #4470cf;
+}
+.ig-icon {
+    color: #d53581;
+}
+.gh-icon {
+    color: #000;
+}
+
+@media screen and (min-width: 1200px)
+{
+    .homepage {
+        max-width: 1140px;
+    }
+}
+@media screen and (max-width: 1199px)
+{
+    .homepage {
+        max-width: 960px;
+    }
+    .profile-title {
+        font-size: 2.2rem;
+    }
+    .profile-subtitle {
+        font-size: 0.9rem;
+    }
+    .profile-bio {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    .profile-info-list {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    .profile-info-list li {
+        margin-bottom: 0.7rem;
+    }
+    .profile-icon {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 991px)
+{
+    .homepage {
+        max-width: 720px;
+    }
+    .profile-card {
+        flex-direction: column;
+    }
+    .profile-subtitle {
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    #container {
+        background-image: linear-gradient(0deg ,#766dff 0%,#88f3ff 100%);
+    }
+    .gradient-skew {
+        display: none;
+    }
+    .homepage {
+        max-width: 540px;
+    }
+    .profile-card {
+        flex-direction: column;
+    }
+    .profile {
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 575px)
+{
+    .profile-title {
+        font-size: 2rem;
+    }
+    .profile-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    .profile-bio {
+        font-size: 0.8rem;
+        margin-bottom: 1.25rem;
+    }
+    .profile-info-list {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .profile-info-list li {
+        margin-bottom: 0.7rem;
+    }
+    .profile-info span {
+        padding-left: 0.25rem;
+        word-break: break-all;
+    }
+    .profile-icon {
+        font-size: 1.1rem;
+    }
+}
