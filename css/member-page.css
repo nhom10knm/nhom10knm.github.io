@@ -48,6 +48,7 @@
     margin: 0 auto;
     padding: 3rem 1rem;
     box-sizing: border-box;
+    opacity: 0;
 }
 .profile-card {
     display: flex;

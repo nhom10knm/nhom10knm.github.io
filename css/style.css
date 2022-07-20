@@ -58,7 +58,8 @@ p {
     margin: 0 auto;
 }
 .main-section {
-    background: #fff;  
+    background: #fff; 
+    opacity: 0; 
 }
 .section {
     padding: 5rem 1rem 2rem;
@@ -90,9 +91,9 @@ p {
 .team-card {
     transition: 0.3s ease;
 }
-.team-card:hover {
+/* .team-card:hover {
     transform: scale(1.1);
-}
+} */
 .team-card-image {
     width: 100%;
     display: block;
@@ -141,4 +142,8 @@ p {
 .team-portfolio:hover {
     background-color: #766dff;
     color: #fff;
+}
+.slick-prev:before, .slick-next:before{
+    color: grey;
+    font-size: 28px;
 }
